@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Recap Assignment</title>
+</head>
+<body>
+    <h1 style="text-align: center; background-color: lightskyblue;">Momma's Macarons</h1>
+    <hr />
+    <nav style="text-align: center; border: solid 3px pink; background-color: lightgrey;">
+            <a href="https://www.facebook.com/mommasmacarons">About Us</a> -
+            <a href="https://scontent-ort2-2.xx.fbcdn.net/v/t1.6435-9/50881523_2186053641616991_3765891990160408576_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=174925&_nc_ohc=ur2oy0BEyCEAX8tNnFV&_nc_ht=scontent-ort2-2.xx&oh=ac97ddfeb2911396645f8ae32e77aab1&oe=60E926B9">Pictures</a> -
+            <a href="https://www.facebook.com/mommasmacarons">Contact</a>
+        </ul>
+    </nav>
+    <div>
+        <h3>Check it out!</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uWSOJMcvDec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    <div style="border:5px dotted pink; text-align: center;">
+        <h2>
+            ORDER NOW!
+        </h2>
+        <p> Just fill out this short form below to place an order for a dozen delicious cookies delivered straight to your doorstep!</p>
+    </div>
+    <div style="border: solid 3px pink; padding: .5rem;">
+        <form style="background-color: lightyellow";>
+            <fieldset>
+                <legend>Who to send it to:</legend>
+                <p>
+                    <label>
+                        Name:
+                        <input name="name" />
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Telephone:
+                        <input type="tel" name="tel" />
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Address:
+                        <input type="address" name="address" />
+                    </label>
+                </p>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>What flavor would you like? ($15/dozen)</legend>
+                <p>
+                    <input type="checkbox" name="flavors"
+                        id="chocrazz" value="chocrazz" />
+                    <label for="chocrazz">Chocolate Raspberry</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="flavors"
+                        id="blueberry" value="blueberry" />
+                    <label for="blueberry">Blueberry Cheesecake</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="flavors"
+                        id="matcha" value="matcha" />
+                    <label for="matcha">Honey Matcha</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="flavors"
+                        id="orange" value="orange" />
+                    <label for="orange">Orange Dreamsicle</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="flavors"
+                        id="strawberry" value="strawberry" />
+                    <label for="strawberry">Strawberries N' Cream</label>
+                </p>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>When do you want it?</legend>
+                <p>
+                    <label for="time">Preferred Delivery Time:</label>
+                    <input id="time" name="time" type="time"
+                        min="12:00" max="19:00">
+                </p>
+                <p>
+                    <label for="instructions">Leave a note for recipient:</label>
+                    <textarea id="instructions" name="instructions"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Submit Order</button>
+                </p>
+            </fieldset>
+        </form>
+</body>
+</html>
